@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+		<title>hello</title>
+		<link rel="stylesheet" type="text/css" href="./form.css">
+		<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+	</head>
+	<body>
+    	<header>
+    		<h1 id='title'>Take the Survey</h1>
+     		<p id='description'>Help us improve are website</p>
+        </header>
+        	<div id='survey-card'>
+        	 	<h2>Tell us about yourself</h2><hr>
+        	 	<form id='survey-form' method="GET" action="/">
+        	 			<h3>Enter your info</h3>        	 			
+        	 			<div class='info-box'>        	 		
+        	 				<div class='info-tag'>
+	        	 				<label id="name-label">name:</label>
+	        	 			</div>
+	        	 			<div class='info-box'>
+	        	 				<input id='name' placeholder='name' required>
+	         				</div>
+	        	 			<div class='info-tag'>
+	        	 				<label id="email-label">email:</label>
+	        	 			</div>
+	        	 			<div class='info-box'>
+	        	 				<input id='email' type='email' placeholder='email' required>
+	        	 			</div>
+	        	 			<div class='info-tag'>	
+	        	 				<label id="number-label">number:</label>
+	        	 			</div>
+	        	 			<div class='info-box'>		
+	        	 				<input id='number' type='number' placeholder='number' required><br>
+	        	 			</div>
+        	 			</div>
+        	 		<hr>
+        	 		<div class='grid' >
+        	 		<div id="info-div1" class='grow'>
+        	 			<div class="info-tag">
+        						<label for="preferences"<h3>what are your interests?(Check all that apply):</h3>
+                                </label>
+      						</div>
+        	 				
+        	 					
+        	 			<div class='info-box'>
+        	 				<ul id="preferences" style="list-style: none;">
+							    <li class="checkbox"><label><input name="preferences" value="flower" type="checkbox" class="prefs">Flower</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="edibles" type="checkbox" class="prefs">edibles</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="extracts" type="checkbox" class="prefs">Extracts</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="products" type="checkbox" class="prefs">Products</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="dispensaries" type="checkbox" class="prefs">Dispensaries</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="shops" type="checkbox" class="prefs">Shops</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="showcase" type="checkbox" class="prefs">Showcase</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="community" type="checkbox" class="prefs">Community</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="blog" type="checkbox" class="prefs">Blog</label></li>
+							    <li class="checkbox"><label><input name="preferences" value="other" type="checkbox" class="prefs">Other</label></li>
+							</ul>
+						</div>
+					</div>
+						<hr>
+						<div id="info-div2" class='grow'>
+							<div class="info-tag">
+        						<label for="smokeStatus"><h3>Whats your smoke status?</h3></label>
+      						</div>
+      						<div class="info-box">
+							    <select id="dropdown" name="smokeStatus" class="dropdown">
+							      <option disabled value>Select an option</option>
+							      <option  value="smoker">Smoker</option>
+							      <option value="non-smoker">Non-Smoker</option>
+							      <option value="vape-king">Vape-King</option>
+							      <option value="preferNo">Prefer not to say</option>
+							      <option value="other">Other</option>
+							    </select>
+							</div>
+						</div>
+						<hr>        	 			
+        	 		 	<div id="info-div3" class='grow'>
+        	 				<div class="info-tag">
+        	 					<label for="gender"><h3>Tell us your sex<br>(optional): </h3></label>
+        	 				</div>
+        	 				<div class='info-box'>
+        	 		 			<input type="radio" name="gender" value="male">Male<br>
+        	 		 			<input type="radio" name="gender" value="female">Female<br>
+        	 		 			<input type="radio" name="gender" value="yes-please">Yes Please
+        	 		 		</div>
+        	 		 	</div>
+        	 		 		<hr>
+        	 		 		<div id="info-div4" class='grow'>
+        	 					<div class="info-tag">
+        	 						 <label for="comments"><h3>All Comments<br> or Suggestions</h3></label>
+        	 					</div>
+        	 					<div class='info-box'>
+        	 		 				<textarea id="comments" class="input-field"  name="comment" placeholder="Enter your comment here..."></textarea>
+        	 		 			</div>
+        	 		 		</div>
+        	 		 			</div>
+        	 		 			
+        	 		 		<button id="submit" type="submit">Submit</button>
+        	 		 	</form>
+        	 		
+        	 	</main>
+        	 </body>
+         </html>
+
+       
+        	 		 
+        	 		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

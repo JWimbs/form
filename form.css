@@ -1,0 +1,251 @@
+html, body {
+   background: linear-gradient(to left, rgb(2, 2, 2), rgb(255, 255, 255));
+   text-align: center;
+   min-width: 320px;
+}
+
+header {
+  text-align: center;
+  padding: 20px 0px 0px 0px;
+  
+}
+
+
+
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 3px 3px black;
+  margin-top: -1%;
+}
+
+h3 {
+  text-align: center;
+  font-size: 1.5em;
+  text-shadow: 3px 3px black;
+ 
+}
+
+p {
+  font-family: monospace;
+  color:white;
+  text-shadow: 2px 2px black;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: -25px
+  
+}
+
+.grid {
+   border: 1px solid white;
+   display:grid;
+  grid-template-columns: 25% 75%,
+  grid-template-rows: 1fr 1fr 1fr; 
+  box-shadow: 0 10px 20px rgba(2,2,2,2.19),
+  0 10px 20px rgba(2,2,2,2.19);  
+}
+
+  
+
+
+#info-div1 {
+  border: 1px solid white;
+  height: 100%
+ grid-column: 1/2;
+  grid-row: 1/4;
+  
+  
+}
+#info-div2 {
+  border: 1px solid white;  
+  grid-column: 2/3;
+  grid-row: 1/2;
+ 
+}
+#info-div3 {
+  border: 1px solid white;  
+  grid-column: 2/3;
+  grid-row: 2/3;
+ 
+}
+#info-div4 {
+  border: 1px solid white;  
+  grid-column: 2/3;
+  grid-row: 3/4;
+  
+}
+
+.grow {
+   transition: all .2s ease-in-out; 
+ }
+
+.grow:hover {
+   transform: scale(1.1); 
+   background: linear-gradient(to right, rgb(2, 2, 2), rgb(255, 255, 255));
+ }
+
+#title {
+  position: relative;
+  font-family: 'Audiowide', cursive;
+  color: #black;
+  text-shadow: 1px 1px white; 
+  animation-name: slide;
+  animation-duration: 1s; 
+}
+
+#survey-card { 
+  width: 70%;
+  height:auto;
+  background-color: #222;
+  border: 3px solid white;
+  border-radius: 4px;
+  margin: 0 auto;
+  padding: 20px;
+  color:white;
+  text-shadow: 2px 2px black;
+  box-shadow: 0 10px 20px rgba(2,2,2,2.19),
+  0 10px 20px rgba(2,2,2,2.19);  
+}
+
+.prefs {
+  float: left;
+  margin-right: 5px;
+}
+
+.dropdown {
+  height: 35px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;  
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+
+.radio, .checkbox {
+  position: relative;
+  left: -43px;
+  margin-left: 10px;
+  display: block;
+  padding-bottom: 10px;
+}
+
+.info-tag {
+   display: inline-block;
+  text-align: right;
+  width: 40%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+
+.info-box {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  vertical-align: middle;
+}
+
+.input-field {
+  
+  height: 100px;
+  width: 15em;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid white;
+  border-radius: 2px;
+}
+
+
+#name, #email, #number {
+  width: 200px;
+  height: 25px;
+}
+
+
+#submit {
+  
+   
+    background:  linear-gradient(to top, rgb(2, 2, 2), rgb(255, 255, 255));
+    display: inline-block;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Audiowide', monospace;
+    font-size: 1.75em;
+    height: 2.0em;
+    line-height: 2.125em;
+    font-weight: 300;
+    padding: 0 45px;
+    margin-top: 20px;
+    outline: 0;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(2,2,2,2.19),
+  0 10px 20px rgba(2,2,2,2.19);  
+    text-shadow: -2px -2px 1px rgba(0, 0, 0, 0.5);
+  }
+
+    #submit:hover {
+      
+      background: linear-gradient(to bottom, rgb(2, 2, 2), rgb(255, 255, 255));
+      background-color: black;
+      box-shadow: 0 10px 20px rgba(2,2,2,2.19),
+  0 10px 20px rgba(2,2,2,2.19);
+    }
+
+   
+
+
+
+@keyframes slide {
+  0% {
+      left: -100%;
+  }
+  
+  100% {
+      left: 0%;
+      font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 833px) {
+
+   .grid
+    {
+        display: block; 
+        float: none; 
+        width: 100%;
+
+    }
+
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+
+  .info-tag {
+    width: 100%;
+    text-align: left;
+  }
+  .info-box {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+     .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+
+}
+
+
+ 
+
